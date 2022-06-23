@@ -1,0 +1,93 @@
+.wrapper {
+  font: normal 15px Verdana;
+}
+
+.wrapper p {
+  margin: 0;
+}
+
+.header,
+.entry {
+  border: 1px solid gray;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5px;
+  padding-left: 10px;
+}
+
+.entry {
+  border-top: 0;
+  padding: 10px 5px;
+}
+
+.header > p {
+  margin: 2px;
+  font-size: 14px;
+}
+
+.header > p > span {
+  color: gray;
+}
+
+.header description {
+}
+
+.header > .left_border {
+  border-left: 1px solid gray;
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.card-body {
+}
+
+.avatar {
+  width: 25px;
+  height: 25px;
+}
+
+.time {
+  color: brown;
+  font-size: 12px;
+}
+
+.entry_util {
+  border: 1px solid gray;
+  display: flex;
+  margin-right: 20px;
+}
+
+.entry_util img:nth-child(2) {
+  border-left: 1px solid gray;
+}
+
+.create_body {
+  background-color: azure;
+  padding: 10px;
+  /* margin-bottom: 10px; */
+  border: 1px solid gray;
+}
+
+.forminput {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.forminput label {
+  color: rgb(78, 74, 74);
+  font-size: 14px;
+}
+
+.forminput input,
+select {
+  width: 100%;
+  outline: none;
+  height: 30px;
+  margin-top: 5px;
+  padding-left: 8px;
+}
