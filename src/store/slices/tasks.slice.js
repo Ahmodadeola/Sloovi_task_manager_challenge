@@ -1,5 +1,11 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
-import { addTask, getTasks, getUsers } from "../../services/Task.services";
+import {
+  addTask,
+  deleteTask,
+  getTasks,
+  getUsers,
+  putTask,
+} from "../../services/Task.services";
 const initialState = {
   tasks: null,
   users: null,
@@ -11,10 +17,25 @@ export const fetchTasks = createAsyncThunk("tasks/fetch all", async () => {
 });
 
 export const createTask = createAsyncThunk(
-  "tasks/cretae task",
+  "tasks/create task",
   async (data) => {
     const res = await addTask(data);
-    console.log("Task created: ", res);
+    return res;
+  }
+);
+
+export const updateTask = createAsyncThunk(
+  "tasks/update task",
+  async (data) => {
+    const res = await putTask(data);
+    return res;
+  }
+);
+
+export const removeTask = createAsyncThunk(
+  "tasks/delete task",
+  async (data) => {
+    const res = await deleteTask(data);
     return res;
   }
 );

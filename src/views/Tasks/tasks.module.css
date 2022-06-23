@@ -46,9 +46,11 @@
 .card-body {
 }
 
-.avatar {
+.avatar,
+.entry_util img {
   width: 25px;
   height: 25px;
+  cursor: pointer;
 }
 
 .time {
@@ -62,7 +64,7 @@
   margin-right: 20px;
 }
 
-.entry_util img:nth-child(2) {
+.entry_util img:not(:nth-child(1)) {
   border-left: 1px solid gray;
 }
 
@@ -90,4 +92,10 @@ select {
   height: 30px;
   margin-top: 5px;
   padding-left: 8px;
+}
+
+.bin {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
 }
