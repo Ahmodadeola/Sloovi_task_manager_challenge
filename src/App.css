@@ -11,6 +11,31 @@
   box-sizing: border-box;
 }
 
+.App .navbar {
+  position: fixed;
+  margin-left: 250px;
+  width: calc(100vw - 250px);
+  height: 5em;
+  top: 0;
+  left: 0;
+  border-bottom: 1px solid gray;
+  box-shadow: 1px 2px 2px;
+  background-color: white;
+}
+
+.App .navbar + * {
+  margin-top: 10em;
+}
+
+.App .sidenav {
+  position: fixed;
+  width: 250px;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: rgb(47, 47, 80);
+}
+
 .flex {
   display: flex;
   align-items: center;

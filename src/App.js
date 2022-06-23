@@ -18,6 +18,8 @@ function App() {
   if (!token) return <div className="text-center">Loading...</div>;
   return (
     <div className="App">
+      <div className="sidenav"></div>
+      <div className="navbar"></div>
       <Tasks />
     </div>
   );
